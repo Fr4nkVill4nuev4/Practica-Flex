@@ -1,11 +1,38 @@
 /*Styles*/
 
-.cards{
-display: flex;
-gap: 18px;
-flex-wrap: wrap;
+*{
+    margin: 0;
+    padding:0
 }
 
-.card {
-    flex: 1 1 180px;
+nav {
+    display: flex; /*Activar flexbox*/
+    justify-content:space-evenly; /*Alineacion horizontal*/
+    align-items: center; /*Vertical*/
+    gap: 10px;
+}
+
+nav a {
+    text-decoration:none;
+    font-size: 19px;
+    color:rgb(185, 22, 22);
+    border-radius:10px
+}
+
+nav:hover{
+    transition: 0.4s ease-out, transform 1s ease;
+    background-color: black;
+    color: azure;
+}
+
+nav a:hover {
+    text-decoration:none;
+    font-size: 25px;
+    transition: 1s ease-out, transform 1s ease;
+    color:rgb(255, 255, 255)
+}
+
+nav img {
+    width: 100px; /*Cambiamos el tamño de la iamgen*/
+
 }
