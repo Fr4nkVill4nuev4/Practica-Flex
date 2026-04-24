@@ -1,0 +1,11 @@
+/*Styles*/
+
+.cards{
+display: flex;
+gap: 18px;
+flex-wrap: wrap;
+}
+
+.card {
+    flex: 1 1 180px;
+}
