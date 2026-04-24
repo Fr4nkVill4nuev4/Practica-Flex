@@ -1,38 +1,83 @@
 /*Styles*/
 
-*{
+* {
     margin: 0;
-    padding:0
+    padding: 0;
+}
+
+body {
+    background-image: url('../img/a7c4b20e9bf9c64ce9b455a5f2e371a9-fondo-de-estrellas-del-espacio.webp');
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
 }
 
 nav {
-    display: flex; /*Activar flexbox*/
-    justify-content:space-evenly; /*Alineacion horizontal*/
-    align-items: center; /*Vertical*/
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
     gap: 10px;
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente para legibilidad */
+    padding: 10px;
 }
 
 nav a {
-    text-decoration:none;
+    text-decoration: none;
     font-size: 19px;
-    color:rgb(185, 22, 22);
-    border-radius:10px
+    color: #00d4ff; /* Cian brillante estilo espacial */
+    border-radius: 10px;
+    padding: 5px 15px;
+    transition: 0.3s ease;
 }
 
-nav:hover{
+nav:hover {
     transition: 0.4s ease-out, transform 1s ease;
-    background-color: black;
-    color: azure;
+    background-color: rgba(10, 10, 30, 0.9); /* Azul noche profundo */
 }
 
 nav a:hover {
-    text-decoration:none;
+    text-decoration: none;
     font-size: 25px;
-    transition: 1s ease-out, transform 1s ease;
-    color:rgb(255, 255, 255)
+    transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Efecto rebote suave */
+    color: #ffffff;
+    text-shadow: 0 0 10px #00d4ff, 0 0 20px #00d4ff; /* Resplandor neón */
 }
 
 nav img {
-    width: 100px; /*Cambiamos el tamño de la iamgen*/
+    width: 100px;
+}
 
+.card img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    transition: 0.5s ease;
+}
+
+.card img:hover {
+    border-color: #bd00ff; /* Borde violeta al pasar el mouse */
+    box-shadow: 0 0 30px rgba(189, 0, 255, 0.4);
+    transform: translateY(-5px);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.05); /* Cristal translucido */
+    backdrop-filter: blur(5px);
+    border-radius: 25px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30px;
+    margin-top: 25px;
+    flex-wrap: wrap;
 }
